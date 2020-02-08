@@ -6,7 +6,8 @@ def selection_sort(mylist):
         m_idx = 0
         m = list[0]
         for n_idx, n in enumerate(list):
-            if n < m:
+            #if n.compare(m):
+            if n.author < m.author:
                 m = n
                 m_idx = n_idx
         return m, m_idx
